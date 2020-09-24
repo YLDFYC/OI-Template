@@ -9,6 +9,7 @@ inline void dijkstra(int s, int *dis, int *vis, priority_queue<pair<int, int>> &
     q.push({0, s});
     while (q.size()) {
         int x = q.top().second;
+        q.pop();
         if (vis[x])
             continue;
         vis[x] = 1;
