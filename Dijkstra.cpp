@@ -2,6 +2,10 @@
 //s: 起始点
 //dis: 最短路
 //MAXN: 最大点数
+#include <queue>
+#include <vector>
+#include <cstring>
+
 inline void dijkstra(int s, int *dis, int *vis, priority_queue<pair<int, int>> &q, vector<int> G[MAXN]) {
     memset(dis, 0x3f, sizeof dis);
     memset(vis, 0, sizeof vis);
